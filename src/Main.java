@@ -2,14 +2,36 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        System.out.println("Задание №1");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+
+        String fullName = lastName + " " + firstName + " " + middleName;
+
+        System.out.println("Ф. И. О. сотрудника — " + fullName);
+
+
+        System.out.println("Задание №2");
+
+        String firstName1 = "Ivan";
+        String middleName1 = "Ivanovich";
+        String lastName1 = "Ivanov";
+        String fullName1 = lastName1 + " " + firstName1 + " " + middleName1;
+
+        String fullNameUpper = fullName1.toUpperCase();
+
+        System.out.println("Данные Ф. И. О. сотрудника для заполнения отчета — " + fullNameUpper);
+
+
+        System.out.println("Задание №3");
+
+        String fullName2 = "Иванов Семён Семёнович";
+
+        String fullNameFixed = fullName2.replace("ё", "е");
+
+        System.out.println("Данные Ф. И. О. сотрудника — " + fullNameFixed);
+
     }
 }
